@@ -1,9 +1,9 @@
-@value makerGreen, makerWine, makerWhite from '../../base/colour.css';
+@value makerGreen, makerDarkGreen, makerWhite from '../../base/colour.css';
 
 .footer {
     width: 100%;
     text-align: center;
-    background-color: makerWine;
+    background-color: makerDarkGreen;
     
 }
 

@@ -1,4 +1,4 @@
-@value makerWhite from '../../base/colour.css';
+@value makerWhite, makerDarkGreen, makerLightGrey from '../../base/colour.css';
 
 
 .login {
@@ -23,6 +23,11 @@
 .button {
     width: 100%;
     border-radius: 10px;
+    border: 2px makerGreen;
     padding: 0.5em;
     background-color: makerWhite;
+}
+
+.content {
+    background-color: makerLightGrey;
 }

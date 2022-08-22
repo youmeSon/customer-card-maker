@@ -13,7 +13,7 @@ const Login = ({authService}) => {
     return (
         <section className={styles.login}>
             <Header />
-                <section>
+                <section className={styles.content}>
                     <h1>Log in</h1>
                         <ul className={styles.list}>
                             <li className={styles.item}>
