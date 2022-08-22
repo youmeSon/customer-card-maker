@@ -1,4 +1,4 @@
-@value makerWhite, makerDarkGreen, makerLightGrey from '../../base/colour.css';
+@value makerWhite, makerRed, makerDarkGreen, makerLightGreen, makerLightGrey from '../../base/colour.css';
 
 
 .login {
@@ -14,11 +14,10 @@
     width: 100%;
     list-style: none;
     padding: 0 1em;
+    margin: 0.5em 0;
 }
 
-.item {
-    margin-bottom: 0.5em;
-}
+
 
 .button {
     width: 100%;
@@ -30,4 +29,35 @@
 
 .content {
     background-color: makerLightGrey;
+}
+
+.input {
+    width: 100%;
+    border-radius: 10px;
+    border: 2px makerGreen;
+    padding: 0.5em;
+    background-color: makerLightGreen;
+    margin-bottom: 0.5em;
+    text-align: center;
+    
+}
+
+::placeholder {
+    color: makerWhite;
+}
+
+.error {
+    color: makerRed;
+}
+
+.success {
+    color: makerDarkGreen;
+}
+
+.hide {
+    display: none;
+}
+
+.or {
+
 }
