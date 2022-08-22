@@ -1,0 +1,28 @@
+@value makerWhite from '../../base/colour.css';
+
+
+.login {
+    width: 30em;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: makerWhite;
+}
+
+.list {
+    width: 100%;
+    list-style: none;
+    padding: 0 1em;
+}
+
+.item {
+    margin-bottom: 0.5em;
+}
+
+.button {
+    width: 100%;
+    border-radius: 10px;
+    padding: 0.5em;
+    background-color: makerWhite;
+}
