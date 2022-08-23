@@ -2,14 +2,21 @@ import React from 'react';
 import Footer from '../footer/footer';
 import Header from '../header/header';
 import styles from './login.module.css';
-
+import { useNavigate } from "react-router-dom";
 
 
 const Login = ({authService}) => {
+
+    let navigate = useNavigate();
+    const goToMaker = (userId) => {
+            navigate('/maker', {state: { id: userId}});
+    }
+
     const onLogin = (event) => {
         authService.login(event.currentTarget.textContent)
-        .then(console.log)
-    }
+        .then(data => goToMaker(data.user.uid));
+        
+        }
 
     const onLoginEmail = () => {
         const error = document.querySelector(`.${styles.error}`);

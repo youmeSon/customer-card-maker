@@ -10,9 +10,7 @@ class AuthService {
             authProvider = new GoogleAuthProvider();
             return signInWithPopup(auth, authProvider);
         } 
-        
-
-        
+          
     }
     emailLogin(emailAddress) {
         const actionCodeSettings = {
