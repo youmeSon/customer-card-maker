@@ -14,7 +14,7 @@ class AuthService {
     }
     emailLogin(emailAddress) {
         const actionCodeSettings = {
-            url: 'http://localhost:3000/',
+            url: 'http://localhost:3000/maker',
             handleCodeInApp: true,
             
           };
