@@ -1,8 +1,9 @@
-import { getAuth, signInWithPopup, GoogleAuthProvider, sendSignInLinkToEmail } from "firebase/auth";
+import { getAuth, onAuthStateChanged, signInWithPopup, GoogleAuthProvider, sendSignInLinkToEmail } from "firebase/auth";
 import firebaseApp from './firebase'
 
 
 class AuthService {
+    
     login(provider) {
         let authProvider;
         const auth = getAuth();
@@ -29,7 +30,14 @@ class AuthService {
                 const errorMessage = error.message;
                 // ...
             });
-                }
+    }
+
+    onAuthChange(onUserChanged) {
+        const auth = getAuth();
+        onAuthStateChanged(auth, user => {
+            onUserChanged(user);
+        });
+    }
 }
 
 export default AuthService;

@@ -3,6 +3,7 @@ import Footer from '../footer/footer';
 import Header from '../header/header';
 import styles from './login.module.css';
 import { useNavigate } from "react-router-dom";
+import { useEffect } from 'react';
 
 
 const Login = ({authService}) => {
@@ -16,7 +17,7 @@ const Login = ({authService}) => {
         authService.login(event.currentTarget.textContent)
         .then(data => goToMaker(data.user.uid));
         
-        }
+    }
 
     const onLoginEmail = () => {
         const error = document.querySelector(`.${styles.error}`);
@@ -28,6 +29,13 @@ const Login = ({authService}) => {
         }
         
     }
+
+    useEffect(() => {
+        authService.onAuthChange(user => {
+            user && goToMaker(user.uid); 
+        })
+    })
+
     return (
         <section className={styles.login}>
             <Header />
