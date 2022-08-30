@@ -1,4 +1,4 @@
-import { getAuth, onAuthStateChanged, signInWithPopup, GoogleAuthProvider, sendSignInLinkToEmail } from "firebase/auth";
+import { getAuth, signOut, onAuthStateChanged, signInWithPopup, GoogleAuthProvider, sendSignInLinkToEmail } from "firebase/auth";
 import firebaseApp from './firebase'
 
 
@@ -37,6 +37,11 @@ class AuthService {
         onAuthStateChanged(auth, user => {
             onUserChanged(user);
         });
+    }
+
+    logout() {
+        const auth = getAuth();
+        signOut(auth);
     }
 }
 

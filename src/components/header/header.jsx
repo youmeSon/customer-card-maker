@@ -3,7 +3,7 @@ import styles from './header.module.css'
 
 const Header = ({onLogout}) => (
             <header className={styles.header}>
-                {true && (<button className={styles.logout} onClick={onLogout}>Logout</button>)}
+                {onLogout && (<button className={styles.logout} onClick={onLogout}>Logout</button>)}
                 <img className={styles.logo} src="/images/logo.png" alt="logo" />
                 <h1 className={styles.title}>Yena's Customer Card</h1>
             </header>
