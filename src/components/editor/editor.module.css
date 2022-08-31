@@ -1,0 +1,11 @@
+@value makerLightGreen, makerLightYellow from '../../base/colour.css';
+
+.editor {
+    flex-basis: 50%;
+    background-color: makerLightYellow; 
+}
+
+.title {
+    text-align: center;
+    font-size: 1rem;
+}

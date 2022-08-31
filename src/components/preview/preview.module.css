@@ -1,0 +1,11 @@
+@value makerYellow from '../../base/colour.css';
+
+.preview {
+    flex-basis: 50%;
+    background-color: makerYellow;
+}
+
+.title {
+    text-align: center;
+    font-size: 1rem;
+}
