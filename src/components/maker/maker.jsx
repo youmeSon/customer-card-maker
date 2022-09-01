@@ -12,14 +12,15 @@ const Maker = ({authService}) => {
     const [cards, setCards] = useState([
         {
             id: '1',
-            name: 'Yena',
-            theme: 'light',
+            name: 'Youme',
+            theme: 'dark',
             item: 'blue shirt',
             itemNumber: '1234',
             email: 'winellyoume@gmail.com',
             mobileNumber: '07464604222',
             fileName: 'youme',
-            fileURL: 'youme.png'
+            fileURL: null,
+            message: 'Hello',
         },
         {
             id: '2',
@@ -30,18 +31,20 @@ const Maker = ({authService}) => {
             email: 'winellyoume2@gmail.com',
             mobileNumber: '07464604322',
             fileName: 'youme',
-            fileURL: 'youme.png'
+            fileURL: null,
+            message: 'Hello',
         },
         {
             id: '3',
-            name: 'Youme',
-            theme: 'light',
+            name: 'Yena',
+            theme: 'colourful',
             item: 'Green Skirt',
             itemNumber: '3463',
             email: 'winellyoume3@gmail.com',
             mobileNumber: '07464604422',
             fileName: 'youme',
-            fileURL: 'youme.png'
+            fileURL: null,
+            message: 'Hello',
         }
     ])
     const navigate = useNavigate();

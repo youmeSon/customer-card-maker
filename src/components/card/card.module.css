@@ -1,0 +1,51 @@
+@value makerDarkGreen, makerLightGreen, makerBlack,makerColourful, makerWhite from '../../base/colour.css';
+
+
+.card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: wheat;
+    margin-bottom: 1em;
+    border-radius: 1em;
+    max-width: 30rem;
+    width: 100%;
+}
+
+.card.dark {
+    background-color: makerDarkGreen;
+    color: makerWhite;
+}
+.card.light {
+    background-color: makerWhite;
+}
+.card.colourful {
+    background: makerColourful;
+}
+
+.avatar {
+    width: 10rem;
+    height: 10rem;
+    padding: 0.5rem;
+    margin-right: 0.7em;
+    margin-left: 0.5em;
+}
+
+.name, .email, .mobile, .item, .message {
+    font-size: 1em;
+    margin: 0;
+    
+}
+.name {
+    font-size: 1.3em;
+    margin-bottom: 1em;
+}
+
+.name::after {
+    content:'';
+    display: block;
+    width: 90%;
+    height: 2px;
+    background-color: makerLightGreen;
+    transform: translateY(0.5em);
+}
