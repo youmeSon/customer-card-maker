@@ -1,0 +1,45 @@
+@value makerDarkGreen from '../../base/colour.css';
+
+.form {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    border-top: 1px solid makerDarkGreen;
+    border-left: 1px solid makerDarkGreen;
+    margin-bottom: 1em;
+}
+
+.input,
+.dropdown,
+.fileInput {
+    border: 0;
+    padding: 0.5em;
+    width: 100%;
+    font-size: 0.8rem;
+    border-bottom: 1px solid makerDarkGreen;
+    border-right: 1px solid makerDarkGreen;
+}
+
+.input,
+.dropdown {
+    flex: 1 1 30%
+}
+
+.message {
+    flex-basis: 100%;
+}
+
+.fileInput {
+   padding: 0;
+   flex: 1 1 50%; 
+}
+
+
+.input:focus,
+.dropdwon:focus,
+.message:focus,
+.button:focus,
+.fileInput:focus {
+    outline: 0;
+}
+
