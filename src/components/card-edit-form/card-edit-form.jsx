@@ -1,7 +1,7 @@
 import React from 'react';
 import Button from '../button/button';
-import styles from './card-editor.module.css';
-import ImageFileInput from './../image-file-input/image-file-input';
+import styles from './card-edit-form.module.css';
+import ImageFileInput from '../image-file-input/image-file-input';
 
 const CardEditor = ({card}) => {
     const {name, message, theme, item, itemNumber, email, mobileNumber, fileName, fileURL} = card;

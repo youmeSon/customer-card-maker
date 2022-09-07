@@ -3,6 +3,7 @@
 .preview {
     flex-basis: 50%;
     background-color: makerYellow;
+    padding: 1em 5em;
 }
 
 .title {
@@ -13,7 +14,7 @@
 .cards {
     width: 100%;
     height: 100%;
-    padding: 1em 5em;
+
     display: flex;
     flex-direction: column;
     align-items: center;

@@ -3,6 +3,7 @@
 .editor {
     flex-basis: 50%;
     background-color: makerLightYellow; 
+    padding: 1em 5em;
 }
 
 .title {
