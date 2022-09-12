@@ -15,7 +15,7 @@ const CardEditor = ({card, updateCard, deleteCard}) => {
 
     const {name, message, theme, item, itemNumber, email, mobileNumber, fileName, fileURL} = card;
     const onSubmit = () => {
-
+        deleteCard(card)
     }
 
     const onChange = (event) => {
