@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './image-file-input.module.css';
 
-const ImageFileInput = (props) => (
+const ImageFileInput = ({imageUploader}) => (
             <button>Image</button>
     );
 
